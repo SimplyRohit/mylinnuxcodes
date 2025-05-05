@@ -1,0 +1,6 @@
+/etc/udev/rules.d/51-android.rules
+
+
+SUBSYSTEM=="usb", ATTR{idVendor}=="[22d9]", MODE="0660", GROUP="adbusers", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTR{idVendor}=="[22d9]", ATTR{idProduct}=="[2765]", SYMLINK+="android_adb"
+SUBSYSTEM=="usb", ATTR{idVendor}=="[22d9]", ATTR{idProduct}=="[2765]", SYMLINK+="android_fastboot"
