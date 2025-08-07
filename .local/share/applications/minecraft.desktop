@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=minecraft
-Exec=java -jar /home/rohit/Downloads/TLauncher.v16/TLauncher.jar
-Icon=minecraft
-Terminal=false
-Type=Application
-Categories=Game;
-
