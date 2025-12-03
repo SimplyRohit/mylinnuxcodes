@@ -1,6 +1,0 @@
-wiremix for audio
-tofi for app launcher
-fzf and custom script for power profile manager
-impala for wifi 
-bluetui for bluetooth
-

@@ -1,0 +1,28 @@
+# Font
+font = CaskaydiaMono Nerd Font
+font-size = 15
+
+# Window Style
+horizontal = true
+anchor = top
+width = 100%
+height = 40
+
+outline-width = 0
+border-width = 0
+min-input-width = 120
+result-spacing = 30
+padding-top = 8
+padding-bottom = 0
+padding-left = 20
+padding-right = 0
+
+# Text style
+prompt-text = "Search"
+prompt-padding = 20
+
+background-color = #1f1f1f
+text-color = #fff
+
+
+clip-to-padding = false

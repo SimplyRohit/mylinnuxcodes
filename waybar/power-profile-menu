@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+command -v fzf >/dev/null 2>&1 || {
+  notify-send "Error" "fzf not found in PATH"
+  exit 1
+}
+current=$(powerprofilesctl get)
+profiles="power-saver\nbalanced\nperformance"
+selected=$(printf "$profiles" | fzf --prompt="Power Profile (current: $current)> " --height=7 --border)
+[ -z "$selected" ] && exit
+powerprofilesctl set "$selected" && notify-send "Power Profile" "Set to: $selected"
